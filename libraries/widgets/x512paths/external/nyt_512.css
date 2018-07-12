@@ -8,13 +8,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .g-chart {
   font: 10px sans-serif;
-  height: 652px;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .g-heads {
   position: absolute;
-  top: 170px;
+  top: 200px;
   left: 485px;
 }
 
@@ -246,7 +247,7 @@ text.g-kicker {
   overflow: hidden;
   padding: 10px 10px 10px 66px;
   position: relative;
-  height: 100px;
+  height: 300px;
 }
 
 .g-reset {
@@ -274,7 +275,7 @@ text.g-kicker {
   height: 50px;
   position: relative;
   text-align: center;
-  width: 90px;
+  width: 120px;
 }
 
 .g-control:last-child {
@@ -285,7 +286,7 @@ text.g-kicker {
   display: block;
   position: absolute;
   top:0;
-  width: 90px;
+  width: 120px;
 }
 
 .g-button {
@@ -351,7 +352,7 @@ text.g-kicker {
 
 .g-scenario {
   float: left;
-  width: 217px;
+  width: 240px;
   margin: 0 10px;
   color: #666;
   position: relative;
@@ -370,7 +371,7 @@ text.g-kicker {
 
 .g-scenario .g-button {
   border-radius: 4px;
-  width: 217px;
+  width: 240px;
   position: absolute;
   bottom: 0;
 }
@@ -381,5 +382,5 @@ text.g-kicker {
   height: 112px;
   left: 25px;
   position: absolute;
-  width: 160px;
+  width: 190px;
 }
