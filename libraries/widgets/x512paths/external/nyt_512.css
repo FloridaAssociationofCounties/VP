@@ -245,7 +245,7 @@ text.g-kicker {
   margin-left: 10px;
   margin: 0 10px;
   overflow: hidden;
-  padding: 10px 10px 10px 66px;
+  padding: 10px 10px 10px 10px;
   position: relative;
   height: 100px;
 }
