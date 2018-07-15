@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <titel>VP Race Updated</title>
+    <title>VP Race Updated</title>
+    <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "NACo 2nd VP Race 2018"
+      },
+      toolTip:{
+        content: "{name}: {y}"
+      },
+      data: [
+      {
+        type: "column",
+        name: "Total Votes",
+        dataPoints: [
+        { y: 232, label: "Sharief"},
+        { y: 162, label: "Jeffers"},
+        { y: 181, label: "Johnson"},
+        { y: 374, label: "Moore"}
+        ]
+      },
+        {
+        type: "column",
+        name: "Additional Votes Needed to Win",
+        dataPoints: [
+        { y: 1198, label: "Sharief"},
+        { y: 1268, label: "Jeffers"},
+        { y: 1249, label: "Johnson"},
+        { y: 1056, label: "Moore"}
+        ]
+      },
+        {
+        type: "column",
+        name: "Additional Votes Needed to Make it to Runoff",
+        dataPoints: [
+        { y: 930, label: "Sharief"},
+        { y: 991, label: "Jeffers"},
+        { y: 981, label: "Johnson"},
+        { y: 859, label: "Moore"}
+        ]
+    },
+       {
+       type: "column",
+       name: "Additional Votes Needed to Beat Weakest Opponent",
+       dataPoints: [
+       { y: 921, label: "Sharief"},
+       { y: 965, label: "Jeffers"},
+       { y: 946, label: "Johnson"},
+       { y: 850, label: "Moore"}
+       ]
+  }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   </head>
   <body>
-    <h3>July 15th data</h3>
+    <h2><b><u>July 15th data</u></b></h2>
     <p><a href="NACo 2018 Conference Credentials 7-15 1100 am.xlsx" download>Data as of 11:00 am</a></p>
     <p><a href="NACo 2018 Conference Credentials 7-15 200 pm.xlsx" download>Data as of 2:00 pm</a></p>
+    <div style="text-align: center;"
+      <div id="chartContainer" style="height: 400px; width: 80%;">
+    </div>
+</div>
   </body>
 </html>
